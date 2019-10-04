@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  END OF RESET */
+
+.main_page { /* Adding white space on either side of the 'main page' */
+    padding-top: 13px;
+    width: 98%;
+    margin: 0 auto;
+}
+.mainSearch { /* Centering Logo, input & buttons */
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.searchInput { /* Adjusting input field size */
+    height:36px;
+    width: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    border: none;
+    box-shadow: 0 0 2px 1px #CCCCCC;
+}
+.searchInput:hover, .searchInput:focus {
+    box-shadow: 0 0 4px 2px #CCCCCC;
+}
+.sIcon {
+    position: relative;
+    width: 25px;
+    top: 7.2px;
+    right: 32px;
+}
+.searchButton, .luckyButton { /* Coloring/shading/shaping of the buttons */
+    height: 36px;
+    line-height: 27px;
+    -moz-border-radius: 2px;
+    -moz-user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    cursor: pointer;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    min-width: 54px;
+    padding: 0 16px;
+    margin-top: 25px;
+    text-align: center;
+}
+.searchButton:hover, .luckyButton:hover {
+    background-image: -moz-linear-gradient(top, #fff, #e8e8e8);
+    border: 1px solid #c6c6c6;
+    color: #222;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/*
+    HEADER LIST: FLOATING EITHER SIDE & "PRETTYING UP" THE BLUE SIGN IN BUTTON
+*/
+ul {
+    padding-right: 20px;
+}
+li {
+    float: left;
+}
+.floatRight {
+    float: right;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px;
+    color: #000;
+    opacity: .75;
+    font-family: arial, sans-serif;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+button {   
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    background: #4285f4;
+    background: -moz-linear-gradient(top,#4387fd,#4683ea);
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+}
+.products {
+    width: 17px;
+    padding: 6px 25px 0 20px;
+    opacity: .5;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    height: 45px;
+    background-color: #F0F0F0;
+    border: 1px solid lightgray;
+}
+.footerText {
+    padding-top: 6px;
+    opacity: .8;
+    padding-left: 25px;
+    padding-right: 25px;
+}
